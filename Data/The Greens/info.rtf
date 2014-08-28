@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 polygons =[]\
+	poly0 = [(7,114),(28,79),(60,36),(90,14),(112,8),(123,65),\
+	(119,90),(132,114),(145,138),(153,162),(157,191),(137,218),(108,234),\
+	(87,243),(68,245),(32,241),(17,233),(6,210),(5,194),(8,158)]; \
+	poly1 = [(377,261),(350,251),(357,227),(369,223),(399,222),\
+	(418,230),(445,250),(418,275),(402,271)]; \
+	poly2 = [(476,255),(469,236),(476,218),(498,209),(531,208),\
+	(578,220),(571,251),(570,264),(533,269),(525,269)]; \
+	poly3 = [(236,188),(250,181),(262,206),(265,225),(238,226),(228,216)];\
+	poly4 = [(304,187),(330,173),(358,170),(376,176),(378,199),(376,206),(343,222),(314,219)];\
+	poly5 = [(491,160),(509,160),(515,165),(514,184),(512,201),(482,202),(481,184),(481,175)]; \
+	polygons.append(poly0)\
+	polygons.append(poly1)\
+	polygons.append(poly2)\
+	polygons.append(poly3)\
+	polygons.append(poly4)\
+	polygons.append(poly5)\
+		\
+	id = 269		\
+\
+	webcam = Webcam.objects.get(id=id)\
+	#Grab all images\
+	images_all = Image.objects.filter(webcam=webcam)\
+	hour_p = 20\
+	minute_p = 23}
